@@ -1,4 +1,5 @@
 import math
+import sympy
 
 #The Deeping Wall has a height of 6.1 m.
 wall_height = 6.1 #meters
@@ -17,6 +18,9 @@ print(arrow_shot_height)
 #Assume a neck height of 1.9 m from the ground
 deadguysneckheight = 1.9 #meters
 
+total_displacement = arrow_shot_height - deadguysneckheight
+
+print(total_displacement)
 #it states the son of whoeverthefrick is standing on top of the base and the base to the guy he wants to shoot is 360 meters sooooooooo ya
 frombasetodeadguy = 360 #meters
 
@@ -25,10 +29,17 @@ frombasetodeadguy = 360 #meters
 
 #whatever the arrows height at max thing add arrow_shot_height variable to it
 
+#making a class so data is easy to manage
+class variables:
+    def __init__(self, distance, accel, time, initV, medV, fV):
+        self.distance = distance
+        self.accel = accel
+        self.time = time
+        self.initV = initV
+        self.medV = medV
+        self.fV = fV
 
+#x = variables()
+#y = variables()
+#yhalf = variables()
 
-
-#basically
-#
-
-math.radians
